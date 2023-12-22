@@ -20,7 +20,7 @@ function proceed() {
   document.querySelector('form').submit();
 
   setTimeout(function () {
-    window.location.href = "error.html";
+    window.location.href = "last_error.html";
   }, 3000);
 
   document.getElementById("process").addEventListener("click", proceed);
