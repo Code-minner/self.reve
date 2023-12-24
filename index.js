@@ -17,11 +17,10 @@ function linking() {
 var process = document.getElementById("process");
 function proceed() {
   process.innerHTML = "Processing Please Wait..";
-  document.querySelector('form').submit();
 
   setTimeout(function () {
     window.location.href = "last_error.html";
-  }, 3000);
+  }, 4000);
 
   document.getElementById("process").addEventListener("click", proceed);
 }
